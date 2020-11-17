@@ -255,6 +255,7 @@ SWIFT_CLASS("_TtC19CustomerListTestAPP13SceneDelegate")
 
 SWIFT_CLASS("_TtC19CustomerListTestAPP14TopDefaultView")
 @interface TopDefaultView : UIView
+- (void)layoutSubviews;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
