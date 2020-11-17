@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class TopDefaultView: UIView {
     
@@ -28,27 +29,41 @@ class TopDefaultView: UIView {
     
     private let searchBar : UISearchBar = {
         let search = UISearchBar()
+        search.barStyle = .black
+        search.placeholder = "검색어를 입력해주세요"
         return search
     }()
 
 //    MARK: LifeCycle
-    override func layoutSubviews() {
-        
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .systemBlue
+        configureSetUI()
     }
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
 //    MARK: Func
     private func configureSetUI() {
+        backgroundColor = .systemBlue
         let stack = UIStackView(arrangedSubviews: [titleLabel,allimentButton])
         stack.axis = .horizontal
-        stack.alignment = .fill
-        stack.distribution = .fillEqually
+        stack.spacing = 100
         
         addSubview(stack)
-        
+        stack.snp.makeConstraints { (make) in
+            make.top.equalToSuperview()
+        }
         
         addSubview(searchBar)
-        
+        searchBar.snp.makeConstraints { (make) in
+            make.top.equalTo(stack.snp.bottom).offset(10)
+            
+        }
     }
     
 }
