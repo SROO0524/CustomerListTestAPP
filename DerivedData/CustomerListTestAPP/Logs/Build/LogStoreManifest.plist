@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>996F5741-768B-4749-883D-B1EB24A4222E</string>
 		</dict>
+		<key>C323F2BD-F07D-4BD5-9F54-D47517B3E09F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C323F2BD-F07D-4BD5-9F54-D47517B3E09F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>CustomerListTestAPP project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>CustomerListTestAPP</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build CustomerListTestAPP</string>
+			<key>timeStartedRecording</key>
+			<real>627289453.78354299</real>
+			<key>timeStoppedRecording</key>
+			<real>627289457.05025005</real>
+			<key>title</key>
+			<string>Build CustomerListTestAPP</string>
+			<key>uniqueIdentifier</key>
+			<string>C323F2BD-F07D-4BD5-9F54-D47517B3E09F</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
