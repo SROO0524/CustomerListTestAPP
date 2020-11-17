@@ -138,7 +138,6 @@ depends-member:
 - !private ["So8NSCodingP", "makeKeyAndVisible"]
 - !private ["So8NSCodingP", "rootViewController"]
 - !private ["So8NSCodingP", "windowScene"]
-- !private ["So26NSExtensionRequestHandlingP", "init"]
 - ["So8NSObjectC", "ConnectionOptions"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
@@ -222,7 +221,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - !private ["So21UIAppearanceContainerP", "windowScene"]
-- !private ["So18UIContentContainerP", "init"]
 - !private ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "bounds"]
 - !private ["So17UICoordinateSpaceP", "init"]
@@ -337,7 +335,6 @@ depends-member:
 - ["So15UISceneDelegateP", "stateRestorationActivityForScene"]
 - ["So15UISceneDelegateP", "window"]
 - ["So15UISceneDelegateP", "windowScene"]
-- !private ["So16UIStateRestoringP", "init"]
 - !private ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
@@ -370,8 +367,6 @@ depends-member:
 - !private ["So6UIViewC", "makeKeyAndVisible"]
 - !private ["So6UIViewC", "rootViewController"]
 - !private ["So6UIViewC", "windowScene"]
-- ["So16UIViewControllerC", ""]
-- !private ["So16UIViewControllerC", "init"]
 - !private ["So8UIWindowC", "init"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
@@ -392,8 +387,6 @@ depends-member:
 - ["So21UIWindowSceneDelegateP", "stateRestorationActivityForScene"]
 - ["So21UIWindowSceneDelegateP", "window"]
 - ["So21UIWindowSceneDelegateP", "windowScene"]
-- !private ["19CustomerListTestAPP14ViewControllerC", ""]
-- !private ["19CustomerListTestAPP14ViewControllerC", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
@@ -457,7 +450,6 @@ depends-nominal:
 - "SH"
 - "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
-- !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sj"
@@ -470,7 +462,6 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
-- !private "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
@@ -482,15 +473,12 @@ depends-nominal:
 - "So30UIResponderStandardEditActionsP"
 - "So7UISceneC"
 - "So15UISceneDelegateP"
-- !private "So16UIStateRestoringP"
 - !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
-- "So16UIViewControllerC"
 - !private "So8UIWindowC"
 - !private "So13UIWindowSceneC"
 - "So21UIWindowSceneDelegateP"
-- !private "19CustomerListTestAPP14ViewControllerC"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"

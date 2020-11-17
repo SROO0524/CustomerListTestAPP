@@ -1,12 +1,13 @@
 version: "Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
 options: "341dee250226e563ab56f35da49a0f94"
-build_time: [1605533383, 369038000]
+build_time: [1605535503, 165323000]
 inputs:
-  "/Users/kimmidum/Documents/CustomerListTestAPP/ViewModel/ViewController.swift": [1605505630, 481577029]
-  "/Users/kimmidum/Documents/CustomerListTestAPP/Model/CustomerListModel.swift": !dirty [1605533383, 290312048]
-  "/Users/kimmidum/Documents/CustomerListTestAPP/View/TopDefaultView.swift": [1605506458, 549370529]
-  "/Users/kimmidum/Documents/CustomerListTestAPP/View/TopSearchVersionView.swift": [1605506494, 876734817]
+  "/Users/kimmidum/Documents/CustomerListTestAPP/View/MainViewController.swift": [1605534610, 336972386]
+  "/Users/kimmidum/Documents/CustomerListTestAPP/Model/CustomerListModel.swift": [1605534204, 29799735]
+  "/Users/kimmidum/Documents/CustomerListTestAPP/View/TopDefaultView.swift": [1605535503, 104949224]
+  "/Users/kimmidum/Documents/CustomerListTestAPP/View/TopSearchVersionView.swift": [1605534553, 9116606]
   "/Users/kimmidum/Documents/CustomerListTestAPP/Utilities/CustomerListTestAPP/AppDelegate.swift": [1605504915, 382767964]
-  "/Users/kimmidum/Documents/CustomerListTestAPP/View/MainView.swift": [1605506400, 767182443]
+  "/Users/kimmidum/Documents/CustomerListTestAPP/View/CustomerListTableViewCell.swift": [1605534536, 256163025]
+  "/Users/kimmidum/Documents/CustomerListTestAPP/ViewModel/CustomerListTableViewModel.swift": [1605534551, 985507644]
   "/Users/kimmidum/Documents/CustomerListTestAPP/Service/DataFetch.swift": [1605532481, 221608923]
-  "/Users/kimmidum/Documents/CustomerListTestAPP/Utilities/CustomerListTestAPP/SceneDelegate.swift": [1605505561, 113355233]
+  "/Users/kimmidum/Documents/CustomerListTestAPP/Utilities/CustomerListTestAPP/SceneDelegate.swift": [1605535468, 264819526]

@@ -16,6 +16,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
+- !private "MainViewController"
 - "SceneDelegate"
 - "UIResponder"
 - "UIScene"
@@ -23,7 +24,6 @@ depends-top-level:
 - "UIWindow"
 - "UIWindowScene"
 - "UIWindowSceneDelegate"
-- !private "ViewController"
 - !private "window"
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
@@ -34,8 +34,8 @@ depends-member:
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - !private ["So15CALayerDelegateP", "windowScene"]
 - ["s7CVarArgP", "ConnectionOptions"]
+- !private ["s7CVarArgP", "MainViewController"]
 - !private ["s7CVarArgP", "UIWindow"]
-- !private ["s7CVarArgP", "ViewController"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "coordinateSpace"]
 - !private ["s7CVarArgP", "init"]
@@ -54,8 +54,8 @@ depends-member:
 - ["Sl", ""]
 - ["SL", ""]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
+- !private ["s28CustomDebugStringConvertibleP", "MainViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
-- !private ["s28CustomDebugStringConvertibleP", "ViewController"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "coordinateSpace"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -72,8 +72,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
+- !private ["s23CustomStringConvertibleP", "MainViewController"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
-- !private ["s23CustomStringConvertibleP", "ViewController"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "coordinateSpace"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -90,8 +90,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "windowScene"]
 - ["SQ", "ConnectionOptions"]
+- !private ["SQ", "MainViewController"]
 - !private ["SQ", "UIWindow"]
-- !private ["SQ", "ViewController"]
 - ["SQ", ""]
 - !private ["SQ", "coordinateSpace"]
 - !private ["SQ", "init"]
@@ -115,8 +115,8 @@ depends-member:
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SF", ""]
 - ["SH", "ConnectionOptions"]
+- !private ["SH", "MainViewController"]
 - !private ["SH", "UIWindow"]
-- !private ["SH", "ViewController"]
 - ["SH", ""]
 - !private ["SH", "coordinateSpace"]
 - !private ["SH", "init"]
@@ -133,6 +133,8 @@ depends-member:
 - ["SH", "window"]
 - ["SH", "windowScene"]
 - ["s25LosslessStringConvertibleP", ""]
+- !private ["19CustomerListTestAPP18MainViewControllerC", ""]
+- !private ["19CustomerListTestAPP18MainViewControllerC", "init"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeKeyAndVisible"]
@@ -140,11 +142,11 @@ depends-member:
 - !private ["So8NSCodingP", "windowScene"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - ["So8NSObjectC", "ConnectionOptions"]
+- !private ["So8NSObjectC", "MainViewController"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
 - !private ["So8NSObjectC", "UIWindowScene"]
-- !private ["So8NSObjectC", "ViewController"]
 - ["So8NSObjectC", ""]
 - !private ["So8NSObjectC", "coordinateSpace"]
 - ["So8NSObjectC", "init"]
@@ -161,11 +163,11 @@ depends-member:
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectC", "windowScene"]
 - ["So8NSObjectP", "ConnectionOptions"]
+- !private ["So8NSObjectP", "MainViewController"]
 - ["So8NSObjectP", "UIScene"]
 - ["So8NSObjectP", "UISceneSession"]
 - ["So8NSObjectP", "UIWindow"]
 - !private ["So8NSObjectP", "UIWindowScene"]
-- !private ["So8NSObjectP", "ViewController"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "coordinateSpace"]
@@ -184,11 +186,11 @@ depends-member:
 - ["So8NSObjectP", "window"]
 - ["So8NSObjectP", "windowScene"]
 - !private ["Sj", ""]
+- !private ["19CustomerListTestAPP13SceneDelegateC", "MainViewController"]
 - ["19CustomerListTestAPP13SceneDelegateC", "UIScene"]
 - ["19CustomerListTestAPP13SceneDelegateC", "UISceneSession"]
 - ["19CustomerListTestAPP13SceneDelegateC", "UIWindow"]
 - !private ["19CustomerListTestAPP13SceneDelegateC", "UIWindowScene"]
-- !private ["19CustomerListTestAPP13SceneDelegateC", "ViewController"]
 - ["19CustomerListTestAPP13SceneDelegateC", ""]
 - ["19CustomerListTestAPP13SceneDelegateC", "deinit"]
 - ["19CustomerListTestAPP13SceneDelegateC", "init"]
@@ -255,11 +257,11 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
 - !private ["So24UILargeContentViewerItemP", "windowScene"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
+- !private ["So30UIPasteConfigurationSupportingP", "MainViewController"]
 - ["So30UIPasteConfigurationSupportingP", "UIScene"]
 - ["So30UIPasteConfigurationSupportingP", "UISceneSession"]
 - ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindowScene"]
-- !private ["So30UIPasteConfigurationSupportingP", "ViewController"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "coordinateSpace"]
 - ["So30UIPasteConfigurationSupportingP", "deinit"]
@@ -277,11 +279,11 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
 - ["So11UIResponderC", "ConnectionOptions"]
+- !private ["So11UIResponderC", "MainViewController"]
 - ["So11UIResponderC", "UIScene"]
 - ["So11UIResponderC", "UISceneSession"]
 - ["So11UIResponderC", "UIWindow"]
 - !private ["So11UIResponderC", "UIWindowScene"]
-- !private ["So11UIResponderC", "ViewController"]
 - ["So11UIResponderC", ""]
 - !private ["So11UIResponderC", "coordinateSpace"]
 - ["So11UIResponderC", "init"]
@@ -298,11 +300,11 @@ depends-member:
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", "windowScene"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
+- !private ["So30UIResponderStandardEditActionsP", "MainViewController"]
 - ["So30UIResponderStandardEditActionsP", "UIScene"]
 - ["So30UIResponderStandardEditActionsP", "UISceneSession"]
 - ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindowScene"]
-- !private ["So30UIResponderStandardEditActionsP", "ViewController"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "coordinateSpace"]
 - ["So30UIResponderStandardEditActionsP", "deinit"]
@@ -322,8 +324,8 @@ depends-member:
 - ["So7UISceneC", "ConnectionOptions"]
 - ["So7UISceneC", ""]
 - !private ["So7UISceneC", "coordinateSpace"]
+- !private ["So15UISceneDelegateP", "MainViewController"]
 - !private ["So15UISceneDelegateP", "UIWindow"]
-- !private ["So15UISceneDelegateP", "ViewController"]
 - ["So15UISceneDelegateP", ""]
 - ["So15UISceneDelegateP", "deinit"]
 - ["So15UISceneDelegateP", "init"]
@@ -344,11 +346,11 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - !private ["So18UITraitEnvironmentP", "windowScene"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
+- !private ["So23UIUserActivityRestoringP", "MainViewController"]
 - ["So23UIUserActivityRestoringP", "UIScene"]
 - ["So23UIUserActivityRestoringP", "UISceneSession"]
 - ["So23UIUserActivityRestoringP", "UIWindow"]
 - !private ["So23UIUserActivityRestoringP", "UIWindowScene"]
-- !private ["So23UIUserActivityRestoringP", "ViewController"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "coordinateSpace"]
 - ["So23UIUserActivityRestoringP", "deinit"]
@@ -377,8 +379,8 @@ depends-member:
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["So8UIWindowC", "windowScene"]
 - !private ["So13UIWindowSceneC", "coordinateSpace"]
+- !private ["So21UIWindowSceneDelegateP", "MainViewController"]
 - !private ["So21UIWindowSceneDelegateP", "UIWindow"]
-- !private ["So21UIWindowSceneDelegateP", "ViewController"]
 - ["So21UIWindowSceneDelegateP", ""]
 - ["So21UIWindowSceneDelegateP", "deinit"]
 - ["So21UIWindowSceneDelegateP", "init"]
@@ -392,14 +394,12 @@ depends-member:
 - ["So21UIWindowSceneDelegateP", "stateRestorationActivityForScene"]
 - ["So21UIWindowSceneDelegateP", "window"]
 - ["So21UIWindowSceneDelegateP", "windowScene"]
-- !private ["19CustomerListTestAPP14ViewControllerC", ""]
-- !private ["19CustomerListTestAPP14ViewControllerC", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MainViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "ViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "coordinateSpace"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -416,8 +416,8 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MainViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ViewController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "coordinateSpace"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
@@ -456,6 +456,7 @@ depends-nominal:
 - !private "SF"
 - "SH"
 - "s25LosslessStringConvertibleP"
+- !private "19CustomerListTestAPP18MainViewControllerC"
 - "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
@@ -490,7 +491,6 @@ depends-nominal:
 - !private "So8UIWindowC"
 - !private "So13UIWindowSceneC"
 - "So21UIWindowSceneDelegateP"
-- !private "19CustomerListTestAPP14ViewControllerC"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"

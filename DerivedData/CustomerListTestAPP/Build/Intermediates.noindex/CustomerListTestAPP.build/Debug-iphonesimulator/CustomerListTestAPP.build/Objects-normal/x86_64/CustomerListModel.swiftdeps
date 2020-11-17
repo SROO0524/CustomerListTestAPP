@@ -3,85 +3,108 @@ provides-top-level:
 - "CustomerList"
 provides-nominal:
 - "19CustomerListTestAPP0aB0V"
-- "19CustomerListTestAPP0aB0V7ResultsV"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
 provides-member:
 - ["19CustomerListTestAPP0aB0V", ""]
-- ["19CustomerListTestAPP0aB0V7ResultsV", ""]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", ""]
+- ["19CustomerListTestAPP0aB0V0B0V", ""]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
 - !private "Array"
 - "Codable"
-- "CodingKeys"
+- "CodingKey"
 - "CustomerList"
 - !private "FloatLiteralType"
 - "Int"
 - !private "IntegerLiteralType"
-- "Results"
+- "List"
 - "String"
 - "StringLiteralType"
 - !private "_findStringSwitchCase"
 - !private "~="
 depends-member:
 - ["s9CodingKeyP", "=="]
-- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "Default_RawValue"]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
 - ["s9CodingKeyP", "_rawHashValue"]
 - ["s9CodingKeyP", "debugDescription"]
 - ["s9CodingKeyP", "description"]
+- !private ["s9CodingKeyP", "findStringSwitchCase"]
 - ["s9CodingKeyP", "hash"]
 - ["s9CodingKeyP", "hashValue"]
 - ["s9CodingKeyP", "init"]
 - ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
 - ["s9CodingKeyP", "stringValue"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "=="]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "Default_RawValue"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "RawValue"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", ""]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "_Default_RawValue"]
-- !private ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "_findStringSwitchCase"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "_rawHashValue"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "birth"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "chargeName"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "contact"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "custno"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "dontsend"]
-- !private ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "findStringSwitchCase"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "hash"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "hashValue"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "init"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "memo"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "name"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "point"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "profile"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "profileUrl"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "rawValue"]
-- ["19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO", "regdate"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "=="]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "Default_RawValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "RawValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", ""]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "_Default_RawValue"]
+- !private ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "_findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "_rawHashValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "birth"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "chargeName"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "contact"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "custno"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "debugDescription"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "description"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "dontsend"]
+- !private ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "hash"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "hashValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "init"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "intValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "memo"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "name"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "point"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "profile"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "profileUrl"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "rawValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "regdate"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "stringValue"]
 - ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "Default_RawValue"]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
 - ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
 - ["s28CustomDebugStringConvertibleP", "description"]
+- !private ["s28CustomDebugStringConvertibleP", "findStringSwitchCase"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
 - ["s28CustomDebugStringConvertibleP", "hashValue"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "Default_RawValue"]
+- ["s23CustomStringConvertibleP", "RawValue"]
 - ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
 - ["s23CustomStringConvertibleP", "_rawHashValue"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
 - ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "findStringSwitchCase"]
 - ["s23CustomStringConvertibleP", "hash"]
 - ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - ["19CustomerListTestAPP0aB0V", "Codable"]
+- ["19CustomerListTestAPP0aB0V", "CodingKey"]
 - ["19CustomerListTestAPP0aB0V", "CodingKeys"]
 - ["19CustomerListTestAPP0aB0V", "Int"]
-- ["19CustomerListTestAPP0aB0V", "Results"]
+- ["19CustomerListTestAPP0aB0V", "List"]
 - ["19CustomerListTestAPP0aB0V", "String"]
 - ["19CustomerListTestAPP0aB0V", ""]
 - !private ["19CustomerListTestAPP0aB0V", "_findStringSwitchCase"]
@@ -90,22 +113,44 @@ depends-member:
 - ["19CustomerListTestAPP0aB0V", "init"]
 - ["19CustomerListTestAPP0aB0V", "list"]
 - ["Se", "Codable"]
-- ["Se", "CodingKeys"]
+- ["Se", "CodingKey"]
 - ["Se", ""]
 - !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "birth"]
+- !private ["Se", "chargeName"]
+- !private ["Se", "contact"]
+- !private ["Se", "custno"]
+- !private ["Se", "dontsend"]
 - ["Se", "encode"]
 - !private ["Se", "findStringSwitchCase"]
 - ["Se", "init"]
 - !private ["Se", "list"]
+- !private ["Se", "memo"]
+- !private ["Se", "name"]
+- !private ["Se", "point"]
+- !private ["Se", "profile"]
+- !private ["Se", "profileUrl"]
+- !private ["Se", "regdate"]
 - !private ["s7DecoderP", "container"]
 - ["SE", "Codable"]
-- ["SE", "CodingKeys"]
+- ["SE", "CodingKey"]
 - ["SE", ""]
 - !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "birth"]
+- !private ["SE", "chargeName"]
+- !private ["SE", "contact"]
+- !private ["SE", "custno"]
+- !private ["SE", "dontsend"]
 - ["SE", "encode"]
 - !private ["SE", "findStringSwitchCase"]
 - ["SE", "init"]
 - !private ["SE", "list"]
+- !private ["SE", "memo"]
+- !private ["SE", "name"]
+- !private ["SE", "point"]
+- !private ["SE", "profile"]
+- !private ["SE", "profileUrl"]
+- !private ["SE", "regdate"]
 - !private ["s7EncoderP", "container"]
 - ["SQ", "=="]
 - ["SQ", "Default_RawValue"]
@@ -145,6 +190,26 @@ depends-member:
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s22KeyedEncodingContainerV", "encode"]
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- ["19CustomerListTestAPP0aB0V0B0V", "CodingKey"]
+- ["19CustomerListTestAPP0aB0V0B0V", "CodingKeys"]
+- ["19CustomerListTestAPP0aB0V0B0V", "Int"]
+- ["19CustomerListTestAPP0aB0V0B0V", "String"]
+- ["19CustomerListTestAPP0aB0V0B0V", ""]
+- !private ["19CustomerListTestAPP0aB0V0B0V", "_findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V", "birth"]
+- ["19CustomerListTestAPP0aB0V0B0V", "chargeName"]
+- ["19CustomerListTestAPP0aB0V0B0V", "contact"]
+- ["19CustomerListTestAPP0aB0V0B0V", "custno"]
+- ["19CustomerListTestAPP0aB0V0B0V", "dontsend"]
+- ["19CustomerListTestAPP0aB0V0B0V", "encode"]
+- !private ["19CustomerListTestAPP0aB0V0B0V", "findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V", "init"]
+- ["19CustomerListTestAPP0aB0V0B0V", "memo"]
+- ["19CustomerListTestAPP0aB0V0B0V", "name"]
+- ["19CustomerListTestAPP0aB0V0B0V", "point"]
+- ["19CustomerListTestAPP0aB0V0B0V", "profile"]
+- ["19CustomerListTestAPP0aB0V0B0V", "profileUrl"]
+- ["19CustomerListTestAPP0aB0V0B0V", "regdate"]
 - ["So8NSCodingP", ""]
 - ["So8NSObjectP", ""]
 - ["SY", "=="]
@@ -154,43 +219,30 @@ depends-member:
 - ["SY", "_Default_RawValue"]
 - !private ["SY", "_findStringSwitchCase"]
 - ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
 - !private ["SY", "findStringSwitchCase"]
 - ["SY", "hash"]
 - ["SY", "hashValue"]
 - ["SY", "init"]
+- ["SY", "intValue"]
 - ["SY", "rawValue"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "CodingKeys"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "Int"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "String"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", ""]
-- !private ["19CustomerListTestAPP0aB0V7ResultsV", "_findStringSwitchCase"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "birth"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "chargeName"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "contact"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "custno"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "dontsend"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "encode"]
-- !private ["19CustomerListTestAPP0aB0V7ResultsV", "findStringSwitchCase"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "init"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "memo"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "name"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "point"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "profile"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "profileUrl"]
-- ["19CustomerListTestAPP0aB0V7ResultsV", "regdate"]
+- ["SY", "stringValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 depends-nominal:
 - "s9CodingKeyP"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- !private "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
-- "19CustomerListTestAPP0aB0V7ResultsV10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "19CustomerListTestAPP0aB0V"
@@ -206,10 +258,10 @@ depends-nominal:
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s22KeyedEncodingContainerV"
 - !private "s30KeyedEncodingContainerProtocolP"
+- "19CustomerListTestAPP0aB0V0B0V"
 - "So8NSCodingP"
 - "So8NSObjectP"
 - "SY"
-- "19CustomerListTestAPP0aB0V7ResultsV"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 depends-dynamic-lookup:
@@ -242,4 +294,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4ada1ef5c5c948a97810af641ba8473a"
+interface-hash: "6483ac1b8e46ca7583330017caed6324"

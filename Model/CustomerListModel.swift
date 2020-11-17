@@ -7,6 +7,7 @@
 
 import Foundation
 
+//    MARK: Data Model
 struct CustomerList : Codable {
     
     let list : [List]
@@ -28,5 +29,11 @@ struct CustomerList : Codable {
             case custno, name, contact, birth, memo, dontsend, point, profile, chargeName, regdate, profileUrl
 
         }
+        // init
+//        init(list : [List], custno: Int, name: String, contact: String, birth: String, memo: String, dontsend: Int, point: Int, profile: Int, chargeName: String,regdate: String, profileUrl: String  ) {
+//            <#statements#>
+//        }
+        
+        
     }
 }
