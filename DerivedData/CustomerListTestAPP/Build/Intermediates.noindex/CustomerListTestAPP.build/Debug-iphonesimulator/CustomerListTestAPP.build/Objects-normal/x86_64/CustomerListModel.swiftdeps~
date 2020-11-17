@@ -1,0 +1,297 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomerList"
+provides-nominal:
+- "19CustomerListTestAPP0aB0V"
+- "19CustomerListTestAPP0aB0V0B0V"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+provides-member:
+- ["19CustomerListTestAPP0aB0V", ""]
+- ["19CustomerListTestAPP0aB0V0B0V", ""]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "Array"
+- "Codable"
+- "CodingKey"
+- "CustomerList"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "List"
+- "String"
+- "StringLiteralType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "Default_RawValue"]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- !private ["s9CodingKeyP", "findStringSwitchCase"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "=="]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "Default_RawValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "RawValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", ""]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "_Default_RawValue"]
+- !private ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "_findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "_rawHashValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "birth"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "chargeName"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "contact"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "custno"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "debugDescription"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "description"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "dontsend"]
+- !private ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "hash"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "hashValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "init"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "intValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "memo"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "name"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "point"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "profile"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "profileUrl"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "rawValue"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "regdate"]
+- ["19CustomerListTestAPP0aB0V0B0V10CodingKeysO", "stringValue"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "Default_RawValue"]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- !private ["s28CustomDebugStringConvertibleP", "findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "Default_RawValue"]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["19CustomerListTestAPP0aB0V", "Codable"]
+- ["19CustomerListTestAPP0aB0V", "CodingKey"]
+- ["19CustomerListTestAPP0aB0V", "CodingKeys"]
+- ["19CustomerListTestAPP0aB0V", "Int"]
+- ["19CustomerListTestAPP0aB0V", "List"]
+- ["19CustomerListTestAPP0aB0V", "String"]
+- ["19CustomerListTestAPP0aB0V", ""]
+- !private ["19CustomerListTestAPP0aB0V", "_findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V", "encode"]
+- !private ["19CustomerListTestAPP0aB0V", "findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V", "init"]
+- ["19CustomerListTestAPP0aB0V", "list"]
+- ["Se", "Codable"]
+- ["Se", "CodingKey"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "birth"]
+- !private ["Se", "chargeName"]
+- !private ["Se", "contact"]
+- !private ["Se", "custno"]
+- !private ["Se", "dontsend"]
+- ["Se", "encode"]
+- !private ["Se", "findStringSwitchCase"]
+- ["Se", "init"]
+- !private ["Se", "list"]
+- !private ["Se", "memo"]
+- !private ["Se", "name"]
+- !private ["Se", "point"]
+- !private ["Se", "profile"]
+- !private ["Se", "profileUrl"]
+- !private ["Se", "regdate"]
+- !private ["s7DecoderP", "container"]
+- ["SE", "Codable"]
+- ["SE", "CodingKey"]
+- ["SE", ""]
+- !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "birth"]
+- !private ["SE", "chargeName"]
+- !private ["SE", "contact"]
+- !private ["SE", "custno"]
+- !private ["SE", "dontsend"]
+- ["SE", "encode"]
+- !private ["SE", "findStringSwitchCase"]
+- ["SE", "init"]
+- !private ["SE", "list"]
+- !private ["SE", "memo"]
+- !private ["SE", "name"]
+- !private ["SE", "point"]
+- !private ["SE", "profile"]
+- !private ["SE", "profileUrl"]
+- !private ["SE", "regdate"]
+- !private ["s7EncoderP", "container"]
+- ["SQ", "=="]
+- ["SQ", "Default_RawValue"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- !private ["SQ", "findStringSwitchCase"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- ["SH", "=="]
+- ["SH", "Default_RawValue"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- !private ["SH", "findStringSwitchCase"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- ["19CustomerListTestAPP0aB0V0B0V", "CodingKey"]
+- ["19CustomerListTestAPP0aB0V0B0V", "CodingKeys"]
+- ["19CustomerListTestAPP0aB0V0B0V", "Int"]
+- ["19CustomerListTestAPP0aB0V0B0V", "String"]
+- ["19CustomerListTestAPP0aB0V0B0V", ""]
+- !private ["19CustomerListTestAPP0aB0V0B0V", "_findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V", "birth"]
+- ["19CustomerListTestAPP0aB0V0B0V", "chargeName"]
+- ["19CustomerListTestAPP0aB0V0B0V", "contact"]
+- ["19CustomerListTestAPP0aB0V0B0V", "custno"]
+- ["19CustomerListTestAPP0aB0V0B0V", "dontsend"]
+- ["19CustomerListTestAPP0aB0V0B0V", "encode"]
+- !private ["19CustomerListTestAPP0aB0V0B0V", "findStringSwitchCase"]
+- ["19CustomerListTestAPP0aB0V0B0V", "init"]
+- ["19CustomerListTestAPP0aB0V0B0V", "memo"]
+- ["19CustomerListTestAPP0aB0V0B0V", "name"]
+- ["19CustomerListTestAPP0aB0V0B0V", "point"]
+- ["19CustomerListTestAPP0aB0V0B0V", "profile"]
+- ["19CustomerListTestAPP0aB0V0B0V", "profileUrl"]
+- ["19CustomerListTestAPP0aB0V0B0V", "regdate"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectP", ""]
+- ["SY", "=="]
+- ["SY", "Default_RawValue"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- !private ["SY", "findStringSwitchCase"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- "s9CodingKeyP"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "19CustomerListTestAPP0aB0V0B0V10CodingKeysO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "19CustomerListTestAPP0aB0V"
+- "Se"
+- !private "s7DecoderP"
+- "SE"
+- !private "s7EncoderP"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "SH"
+- !private "s6HasherV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "19CustomerListTestAPP0aB0V0B0V"
+- "So8NSCodingP"
+- "So8NSObjectP"
+- "SY"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "6483ac1b8e46ca7583330017caed6324"
