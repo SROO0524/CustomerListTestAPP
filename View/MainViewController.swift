@@ -10,13 +10,26 @@ import UIKit
 class MainViewController: UIViewController {
 
 //    MARK: Properties
+    let url = "http://crm-staging.gongbiz.kr/app/v2020/cust"
+    var loading = false
+    var isEnded = false
+    var customerInfos : [CustomerInfo] = [] {
+        didSet{
+            tableView.reloadData()
+            loading = false
+        }
+    }
+    var page = 1
+
+//    private let dataFetch = DataFetch()
     private let topDefaultView = TopDefaultView()
     private let tableView : UITableView = {
         let table = UITableView()
         table.register(CustomerListTableViewCell.self, forCellReuseIdentifier: CustomerListTableViewCell.identifier)
         return table
     }()
-
+    
+    
     
     private let searchController : UISearchController = {
         let search = UISearchController(searchResultsController: nil)
@@ -46,8 +59,10 @@ class MainViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
 //        tableView.rowHeight = 100
         view.backgroundColor = .white
-        
+//        dataFetch.customerListDataFetch()
+        configureStoreInfo(page)
         configure()
+        
 
     }
 
@@ -96,34 +111,48 @@ class MainViewController: UIViewController {
         
 
     }
+    
+    private func configureStoreInfo(_ page: Int) {
+        loading = true
+        storeInfoService(selfVC: self, page: page)
+    }
 
 }
 
 extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        return self.customerInfos.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomerListTableViewCell.identifier, for: indexPath) as!
                 CustomerListTableViewCell
+        cell.update(self.customerInfos[indexPath.row])
         cell.separatorInset = UIEdgeInsets.zero
         return cell
-        
     }
     
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let height: CGFloat = scrollView.frame.size.height
+        let contentYOffset: CGFloat = scrollView.contentOffset.y
+        let scrollViewHeight: CGFloat = scrollView.contentSize.height
+        let distanceFromBottom: CGFloat = scrollViewHeight - contentYOffset
+                  
+        if distanceFromBottom < height && !loading && !isEnded {
+            page += 1
+            configureStoreInfo(page)
+        }
+    }
 }
 
 extension MainViewController : TopDefaultViewDelegate {
     func tapButtonpressed() {
         print("클린된다")
     }
-    
-    
 }
+
 

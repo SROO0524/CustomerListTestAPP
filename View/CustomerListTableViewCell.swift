@@ -11,6 +11,14 @@ class CustomerListTableViewCell: UITableViewCell {
     static let identifier = "CustomerListTableViewCell"
     
 //    MARK: Properties
+    var customerInfo : CustomerInfo? {
+        didSet{
+            nameLabel.text = self.customerInfo?.name
+            phoneLabel.text = self.customerInfo?.contact
+            redateLabel.text = self.customerInfo?.regdate
+            memoView.text = self.customerInfo?.memo
+        }
+    }
     
     private let profileImage : UIImageView = {
         let image = UIImageView()
@@ -20,14 +28,12 @@ class CustomerListTableViewCell: UITableViewCell {
     
     private let nameLabel : UILabel = {
         let label = UILabel()
-        label.text = "김시루"
         label.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 19)
         return label
     }()
     
     private let phoneLabel : UILabel = {
         let label = UILabel()
-        label.text = "010-123-1234"
         label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 16)
         label.textColor = ColorModel.customSubGray
         return label
@@ -35,7 +41,6 @@ class CustomerListTableViewCell: UITableViewCell {
 
     private let redateLabel : UILabel = {
         let label = UILabel()
-        label.text = "5월 20일"
         label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 16)
         label.textColor = ColorModel.customSubGray
         return label
@@ -44,7 +49,6 @@ class CustomerListTableViewCell: UITableViewCell {
     private let memoView : UILabel = {
         let label = UILabel()
         label.layer.cornerRadius = 10
-        label.text = "메모를 보여주는 공간입니다. 메모를 보여주는 공간입니다."
         label.textAlignment = .left
         label.clipsToBounds = true
         label.layer.cornerRadius = 5
@@ -57,12 +61,17 @@ class CustomerListTableViewCell: UITableViewCell {
 //    MARK: Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         configureSetUI()
         
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func update(_ customerInfo: CustomerInfo) {
+        self.customerInfo = customerInfo
     }
     
 //    MARK: configure
@@ -98,17 +107,6 @@ class CustomerListTableViewCell: UITableViewCell {
             make.trailing.equalTo(contentView).inset(15)
             make.bottom.equalTo(contentView).inset(15)
         }
-        
-        
-        
-        
-        
-        
-        
     }
-    
-
-    
-
 
 }
