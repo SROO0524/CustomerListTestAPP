@@ -38,13 +38,13 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         congigureNavigation()
-
+        view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         topDefaultView.delegate = self
         tableView.frame = view.bounds
         tableView.rowHeight = UITableView.automaticDimension
-        view.addSubview(tableView)
+//        tableView.rowHeight = 100
         view.backgroundColor = .white
         
         configure()
@@ -111,6 +111,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomerListTableViewCell.identifier, for: indexPath) as!
                 CustomerListTableViewCell
+        cell.separatorInset = UIEdgeInsets.zero
         return cell
         
     }
