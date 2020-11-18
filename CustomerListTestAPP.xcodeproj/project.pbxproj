@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9E4DAAB88166737437C66E5E /* Pods_CustomerListTestAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E77697A96FA43AB103DDB3 /* Pods_CustomerListTestAPP.framework */; };
+		DE13095C25650204005A49A2 /* ConstansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13095B25650204005A49A2 /* ConstansModel.swift */; };
 		DE601E9E2562B2C1008D9FAE /* DataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601E9D2562B2C1008D9FAE /* DataFetch.swift */; };
 		DE601EA42562BA58008D9FAE /* CustomerListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601EA32562BA58008D9FAE /* CustomerListTableViewModel.swift */; };
 		DE601EA82562BAA0008D9FAE /* CustomerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */; };
@@ -18,12 +19,12 @@
 		DED956F62562471500CDCE23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED956F42562471500CDCE23 /* LaunchScreen.storyboard */; };
 		DED9570525624AF300CDCE23 /* CustomerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9570425624AF300CDCE23 /* CustomerListModel.swift */; };
 		DED9571225624D0B00CDCE23 /* TopDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9571125624D0B00CDCE23 /* TopDefaultView.swift */; };
-		DED9571725624D3F00CDCE23 /* TopSearchVersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9571625624D3F00CDCE23 /* TopSearchVersionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24E77697A96FA43AB103DDB3 /* Pods_CustomerListTestAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomerListTestAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B41DC0193475B88649A327 /* Pods-CustomerListTestAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerListTestAPP.debug.xcconfig"; path = "Target Support Files/Pods-CustomerListTestAPP/Pods-CustomerListTestAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		DE13095B25650204005A49A2 /* ConstansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstansModel.swift; sourceTree = "<group>"; };
 		DE601E9D2562B2C1008D9FAE /* DataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetch.swift; sourceTree = "<group>"; };
 		DE601EA32562BA58008D9FAE /* CustomerListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewModel.swift; sourceTree = "<group>"; };
 		DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewCell.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		DED956F72562471500CDCE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DED9570425624AF300CDCE23 /* CustomerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListModel.swift; sourceTree = "<group>"; };
 		DED9571125624D0B00CDCE23 /* TopDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDefaultView.swift; sourceTree = "<group>"; };
-		DED9571625624D3F00CDCE23 /* TopSearchVersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSearchVersionView.swift; sourceTree = "<group>"; };
 		E68495B49E827140A2C9EF3A /* Pods-CustomerListTestAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerListTestAPP.release.xcconfig"; path = "Target Support Files/Pods-CustomerListTestAPP/Pods-CustomerListTestAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +66,6 @@
 				D1B41DC0193475B88649A327 /* Pods-CustomerListTestAPP.debug.xcconfig */,
 				E68495B49E827140A2C9EF3A /* Pods-CustomerListTestAPP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				DED9570425624AF300CDCE23 /* CustomerListModel.swift */,
+				DE13095B25650204005A49A2 /* ConstansModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,7 +125,6 @@
 			children = (
 				DED956ED2562471300CDCE23 /* MainViewController.swift */,
 				DED9571125624D0B00CDCE23 /* TopDefaultView.swift */,
-				DED9571625624D3F00CDCE23 /* TopSearchVersionView.swift */,
 				DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */,
 			);
 			path = View;
@@ -263,11 +262,11 @@
 				DED956EE2562471300CDCE23 /* MainViewController.swift in Sources */,
 				DED9570525624AF300CDCE23 /* CustomerListModel.swift in Sources */,
 				DED9571225624D0B00CDCE23 /* TopDefaultView.swift in Sources */,
-				DED9571725624D3F00CDCE23 /* TopSearchVersionView.swift in Sources */,
 				DED956EA2562471300CDCE23 /* AppDelegate.swift in Sources */,
 				DE601EA82562BAA0008D9FAE /* CustomerListTableViewCell.swift in Sources */,
 				DE601EA42562BA58008D9FAE /* CustomerListTableViewModel.swift in Sources */,
 				DE601E9E2562B2C1008D9FAE /* DataFetch.swift in Sources */,
+				DE13095C25650204005A49A2 /* ConstansModel.swift in Sources */,
 				DED956EC2562471300CDCE23 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

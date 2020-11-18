@@ -8,10 +8,16 @@
 import UIKit
 import SnapKit
 
+protocol TopDefaultViewDelegate : class {
+    func tapButtonpressed()
+}
+
 class TopDefaultView: UIView {
     
 //    MARK: Properties
 
+    weak var delegate : TopDefaultViewDelegate?
+    
     private let titleLabel : UILabel = {
         let label = UILabel()
         label.text = "고객 리스트"
@@ -24,46 +30,42 @@ class TopDefaultView: UIView {
         let button = UIButton()
         button.setImage(UIImage(named: "btnLineUp"), for: .normal)
         button.frame.size = CGSize(width: 30, height: 30)
+        button.addTarget(self, action: #selector(alignmentButtonTap), for: .touchUpInside)
+        button.isSelected = true
         return button
     }()
     
-    private let searchBar : UISearchBar = {
-        let search = UISearchBar()
-        search.barStyle = .black
-        search.placeholder = "검색어를 입력해주세요"
-        return search
-    }()
-
 //    MARK: LifeCycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemBlue
         configureSetUI()
     }
     
-    required init?(coder: NSCoder) {
+    required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
 //    MARK: Func
     private func configureSetUI() {
-        backgroundColor = .systemBlue
         let stack = UIStackView(arrangedSubviews: [titleLabel,allimentButton])
-        stack.axis = .horizontal
-        stack.spacing = 100
-        
         addSubview(stack)
+        stack.axis = .horizontal
+        stack.spacing = 210
+//        stack.backgroundColor = .systemRed
+  
         stack.snp.makeConstraints { (make) in
-            make.top.equalToSuperview()
-        }
-        
-        addSubview(searchBar)
-        searchBar.snp.makeConstraints { (make) in
-            make.top.equalTo(stack.snp.bottom).offset(10)
+            make.top.equalTo(self.snp.centerY).offset(10)
+//            make.leading.equalToSuperview()
+            make.width.equalToSuperview()
             
         }
     }
     
+    @objc func alignmentButtonTap() {
+        delegate?.tapButtonpressed()
+        print("클릭")
+    }
 }
+    
+
