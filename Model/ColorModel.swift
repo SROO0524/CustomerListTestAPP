@@ -6,10 +6,9 @@
 //
 
 import UIKit
-
+//    MARK: Color Model
 struct ColorModel {
     
-//    GrayColor
     static let customGray = UIColor(red: 245/255, green: 248/255, blue: 249/255, alpha: 1)
     
     static let customSubGray = UIColor(red: 134/255, green: 142/255, blue: 150/255, alpha: 1)

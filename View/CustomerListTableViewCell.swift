@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import SnapKit
 
 class CustomerListTableViewCell: UITableViewCell {
     static let identifier = "CustomerListTableViewCell"
@@ -109,7 +110,7 @@ class CustomerListTableViewCell: UITableViewCell {
         
         profileUrl.snp.makeConstraints { (make) in
             make.top.leading.equalToSuperview().offset(15)
-            make.bottom.equalTo(contentView).inset(55)
+            make.bottom.equalTo(contentView).inset(35)
             make.width.equalTo(contentView.snp.width).multipliedBy(0.18)
             make.height.equalTo(profileUrl.snp.width)
         }

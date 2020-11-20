@@ -43,7 +43,7 @@ class MainViewController: UIViewController, ViewModelDelegate {
         viewModel.fetch()
     }
     
-//    MARK: func
+//    MARK: Func
     // Navigation Bar 설정
     private func congigureNavigation() {
         //Navigation Title
@@ -63,6 +63,7 @@ class MainViewController: UIViewController, ViewModelDelegate {
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(string: "검색어를 입력해주세요")
     }
     
+    // TableView Reload
     func reload() {
         tableView.reloadData()
     }

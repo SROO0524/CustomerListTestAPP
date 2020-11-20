@@ -27,12 +27,13 @@ class MainViewModel: ViewModel, RequestDelegate {
     var viewModeldelegate: ViewModelDelegate?
     
     let url = "http://crm-staging.gongbiz.kr/app/v2020/cust"
-    
+
+//    MARK:  Init
     init() {
         requestService.requestDelegate = self
         self.fetch()
     }
-    
+//    MARK: Func
     public func find(index: Int) -> CustomerInfo {
         return self.customerInfos[index]
     }
@@ -41,7 +42,7 @@ class MainViewModel: ViewModel, RequestDelegate {
         return self.customerInfos.count
     }
     
-    // Customer Info Fetch
+// Customer Info Fetch
     func fetch() {
         if canFetch() {
             self.page += 1
@@ -82,7 +83,7 @@ class MainViewModel: ViewModel, RequestDelegate {
         self.isOrdering = false
     }
     
-    
+    //데이터 성공
     func success(response: Response) {
         let customerInfosRes = response as! CutomerListResponse
         if (customerInfosRes.list.count == 0) {
@@ -95,6 +96,7 @@ class MainViewModel: ViewModel, RequestDelegate {
         viewModeldelegate?.reload()
     }
     
+    // 데이터 실패
     func fail() {
         self.page -= 1
         self.loading = false

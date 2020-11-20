@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E4DAAB88166737437C66E5E /* Pods_CustomerListTestAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E77697A96FA43AB103DDB3 /* Pods_CustomerListTestAPP.framework */; };
-		DE13095C25650204005A49A2 /* ConstansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13095B25650204005A49A2 /* ConstansModel.swift */; };
 		DE13096325651601005A49A2 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13096225651601005A49A2 /* ColorModel.swift */; };
-		DE13097125665A83005A49A2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13097025665A83005A49A2 /* Extension.swift */; };
 		DE5057452567E8E6004AEA6E /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5057442567E8E6004AEA6E /* RequestService.swift */; };
-		DE601E9E2562B2C1008D9FAE /* DataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601E9D2562B2C1008D9FAE /* DataFetch.swift */; };
 		DE601EA42562BA58008D9FAE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601EA32562BA58008D9FAE /* MainViewModel.swift */; };
 		DE601EA82562BAA0008D9FAE /* CustomerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */; };
 		DED956EA2562471300CDCE23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED956E92562471300CDCE23 /* AppDelegate.swift */; };
@@ -21,17 +18,13 @@
 		DED956F32562471500CDCE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED956F22562471500CDCE23 /* Assets.xcassets */; };
 		DED956F62562471500CDCE23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED956F42562471500CDCE23 /* LaunchScreen.storyboard */; };
 		DED9570525624AF300CDCE23 /* CustomerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9570425624AF300CDCE23 /* CustomerListModel.swift */; };
-		DED9571225624D0B00CDCE23 /* TopDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED9571125624D0B00CDCE23 /* TopDefaultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24E77697A96FA43AB103DDB3 /* Pods_CustomerListTestAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomerListTestAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B41DC0193475B88649A327 /* Pods-CustomerListTestAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerListTestAPP.debug.xcconfig"; path = "Target Support Files/Pods-CustomerListTestAPP/Pods-CustomerListTestAPP.debug.xcconfig"; sourceTree = "<group>"; };
-		DE13095B25650204005A49A2 /* ConstansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstansModel.swift; sourceTree = "<group>"; };
 		DE13096225651601005A49A2 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
-		DE13097025665A83005A49A2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DE5057442567E8E6004AEA6E /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
-		DE601E9D2562B2C1008D9FAE /* DataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetch.swift; sourceTree = "<group>"; };
 		DE601EA32562BA58008D9FAE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewCell.swift; sourceTree = "<group>"; };
 		DED956E62562471300CDCE23 /* CustomerListTestAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerListTestAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +35,6 @@
 		DED956F52562471500CDCE23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DED956F72562471500CDCE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DED9570425624AF300CDCE23 /* CustomerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListModel.swift; sourceTree = "<group>"; };
-		DED9571125624D0B00CDCE23 /* TopDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDefaultView.swift; sourceTree = "<group>"; };
 		E68495B49E827140A2C9EF3A /* Pods-CustomerListTestAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerListTestAPP.release.xcconfig"; path = "Target Support Files/Pods-CustomerListTestAPP/Pods-CustomerListTestAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,18 +67,9 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DE13096F25665A46005A49A2 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				DE13097025665A83005A49A2 /* Extension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		DE601E9C2562B245008D9FAE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				DE601E9D2562B2C1008D9FAE /* DataFetch.swift */,
 				DE5057442567E8E6004AEA6E /* RequestService.swift */,
 			);
 			path = Service;
@@ -100,7 +83,6 @@
 				DED9570225624A6900CDCE23 /* ViewModel */,
 				DE601E9C2562B245008D9FAE /* Service */,
 				DED9570325624A9A00CDCE23 /* Utilities */,
-				DE13096F25665A46005A49A2 /* Extension */,
 				DED956E72562471300CDCE23 /* Products */,
 				CBDD8CC6D3BDC4E6F1687CA6 /* Pods */,
 				697423898DF226BEB68CA83C /* Frameworks */,
@@ -131,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				DED9570425624AF300CDCE23 /* CustomerListModel.swift */,
-				DE13095B25650204005A49A2 /* ConstansModel.swift */,
 				DE13096225651601005A49A2 /* ColorModel.swift */,
 			);
 			path = Model;
@@ -141,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				DED956ED2562471300CDCE23 /* MainViewController.swift */,
-				DED9571125624D0B00CDCE23 /* TopDefaultView.swift */,
 				DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */,
 			);
 			path = View;
@@ -278,13 +258,9 @@
 			files = (
 				DED956EE2562471300CDCE23 /* MainViewController.swift in Sources */,
 				DED9570525624AF300CDCE23 /* CustomerListModel.swift in Sources */,
-				DED9571225624D0B00CDCE23 /* TopDefaultView.swift in Sources */,
 				DED956EA2562471300CDCE23 /* AppDelegate.swift in Sources */,
-				DE13097125665A83005A49A2 /* Extension.swift in Sources */,
 				DE601EA82562BAA0008D9FAE /* CustomerListTableViewCell.swift in Sources */,
 				DE601EA42562BA58008D9FAE /* MainViewModel.swift in Sources */,
-				DE601E9E2562B2C1008D9FAE /* DataFetch.swift in Sources */,
-				DE13095C25650204005A49A2 /* ConstansModel.swift in Sources */,
 				DE5057452567E8E6004AEA6E /* RequestService.swift in Sources */,
 				DED956EC2562471300CDCE23 /* SceneDelegate.swift in Sources */,
 				DE13096325651601005A49A2 /* ColorModel.swift in Sources */,

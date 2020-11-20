@@ -8,15 +8,17 @@
 import UIKit
 import Alamofire
 
+//    MARK: Request Protocol
 public protocol RequestDelegate {
     func success(response: Response) -> Void
     func fail() -> Void
 }
 
 class RequestService {
-    
+//    MARK: Properties
     var requestDelegate: RequestDelegate?
-    
+
+//    MARK:  Fetch Func
     public func getRequest(_ url: String, viewModel: ViewModel, param: [String: Any]) {
         AF.request(url,
                    method: .get,
@@ -28,25 +30,25 @@ class RequestService {
                 print("----- AF RESPONSE ERROR [GET] (CUSTOMER INFO)----- \(error.localizedDescription)")
             }
             
-            guard let code = response.response?.statusCode else { return }
+            guard let code = response.response?.statusCode else { self.requestDelegate?.fail()
+                return
+            }
             
             if code >= 200, code <= 299 {
                 switch response.result {
-                    
-                case .success(let data):
-                    guard let data = data else {return}
-                    do {
-                        let json = try JSONDecoder().decode(CutomerListResponse.self, from: data)
-                        self.requestDelegate?.success(response: json)
-                             
-                    } catch let error {
-                        print("----- JSONDecoder ERROR (CUSTOMER INFO)-----  \(error.localizedDescription)")
+                    case .success(let data):
+                        guard let data = data else {return}
+                        do {
+                            let json = try JSONDecoder().decode(CutomerListResponse.self, from: data)
+                            self.requestDelegate?.success(response: json)
+                            
+                        } catch let error {
+                            print("----- JSONDecoder ERROR (CUSTOMER INFO)-----  \(error.localizedDescription)")
+                        }
+                        
+                    case .failure(let error):
+                        print("----- AF RESULT FAIL [GET] (CUSTOMER INFO)----- \(error.localizedDescription)")
                     }
-                    
-                case .failure(let error):
-                    print("----- AF RESULT FAIL [GET] (CUSTOMER INFO)----- \(error.localizedDescription)")
-                }
-                
             } else if code >= 400, code <= 499 {
                 self.requestDelegate?.fail()
             } else {
@@ -54,4 +56,4 @@ class RequestService {
             }
         }
     }
-    }
+}
