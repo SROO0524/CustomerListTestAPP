@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 
 extension MainViewController {
-    func storeInfoService(selfVC: MainViewController, page: Int) {
+    func customerInfoService(selfVC: MainViewController, page: Int) {
         AF.request(url,
                    method: .get,
                    parameters: ["size": 20, "page": page],
@@ -17,7 +17,7 @@ extension MainViewController {
         ).response { (response) in
             
             if let error = response.error {
-                print("----- AF RESPONSE ERROR [GET] (STORE INFO)----- \(error.localizedDescription)")
+                print("----- AF RESPONSE ERROR [GET] (CUSTOMER INFO)----- \(error.localizedDescription)")
             }
             
             guard let code = response.response?.statusCode else { return }
@@ -34,20 +34,20 @@ extension MainViewController {
                         } else {
                             self.customerInfos = self.customerInfos + json.list
                         }
-                        print("----- AF RESULT SUCCESS [GET] (STORE INFO)----- ")
+                        print("----- AF RESULT SUCCESS [GET] (CUSTOMER INFO)----- ")
                         
                     } catch let error {
-                        print("----- JSONDecoder ERROR (STORE INFO)-----  \(error.localizedDescription)")
+                        print("----- JSONDecoder ERROR (CUSTOMER INFO)-----  \(error.localizedDescription)")
                     }
                     
                 case .failure(let error):
-                    print("----- AF RESULT FAIL [GET] (STORE INFO)----- \(error.localizedDescription)")
+                    print("----- AF RESULT FAIL [GET] (CUSTOMER INFO)----- \(error.localizedDescription)")
                 }
                 
             } else if code >= 400, code <= 499 {
-                print("----- AF STATUS CODE IS 400 ~ 499 [GET] (STORE INFO)----- ")
+                print("----- AF STATUS CODE IS 400 ~ 499 [GET] (CUSTOMER INFO)----- ")
             } else {
-                print("----- AF STATUS CODE IS 500 ~ [GET] (STORE INFO)----- ")
+                print("----- AF STATUS CODE IS 500 ~ [GET] (CUSTOMER INFO)----- ")
             }
         }
     }

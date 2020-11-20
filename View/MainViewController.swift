@@ -25,9 +25,6 @@ class MainViewController: UIViewController {
     var customerInfosForTable: [CustomerInfo] = []
     
     var page = 1
-
-//    private let dataFetch = DataFetch()
-    private let topDefaultView = TopDefaultView()
     private let tableView : UITableView = {
         let table = UITableView()
         table.register(CustomerListTableViewCell.self, forCellReuseIdentifier: CustomerListTableViewCell.identifier)
@@ -42,21 +39,8 @@ class MainViewController: UIViewController {
         return search
     }()
     
-    private let button : UIButton = {
-       let button = UIButton()
-        button.setImage(UIImage(named: "btnLineUp"), for: .normal)
-        return button
-    }()
-    
-    private let image : UIImageView = {
-        let imageview = UIImageView()
-        imageview.image = UIImage(named: "btnLineUp")
-        return imageview
-    }()
-    
+    private let sortedButtonImage = UIImage(named: "btnLineUp")?.withRenderingMode(.alwaysOriginal)
 
-    
-    
 //    MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,31 +48,14 @@ class MainViewController: UIViewController {
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        topDefaultView.delegate = self
         tableView.frame = view.bounds
         tableView.rowHeight = UITableView.automaticDimension
-//        tableView.rowHeight = 100
         view.backgroundColor = .white
-//        dataFetch.customerListDataFetch()
         configureStoreInfo(page)
         configure()
         
 
     }
-
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        showButton()
-//    }
-//
-//    private func showButton() {
-//        if searchController.isEditing {
-//                self.button.alpha = 0
-//            } else {
-//                self.button.alpha = 1
-//        }
-//    }
-        
 //    MARK: func
     private func configure() {
 
@@ -96,15 +63,16 @@ class MainViewController: UIViewController {
         
     // Navigation Bar 설정
     private func congigureNavigation() {
-        //Title
+        //Navigation Title
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "고객 리스트"
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         
-        //Button
-       navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
+        //Navigation Bar Button
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: sortedButtonImage, style: .plain, target: self, action: #selector(sortButtonTaped(_:)))
 
-        // Search Controller
+                                               
+        // Search Controller in Navigation Controller
         navigationItem.hidesSearchBarWhenScrolling = true
         navigationItem.searchController = searchController
         searchController.searchResultsUpdater = self
@@ -112,15 +80,17 @@ class MainViewController: UIViewController {
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(string: "검색어를 입력해주세요")
     }
     
+    
     private func configureStoreInfo(_ page: Int) {
         loading = true
-        storeInfoService(selfVC: self, page: page)
+        customerInfoService(selfVC: self, page: page)
     }
 
 }
 
 //    MARK: Extension
 
+//TableViewDelegate extension
 extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -138,6 +108,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    //ScrollEvent Catch
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let height: CGFloat = scrollView.frame.size.height
         let contentYOffset: CGFloat = scrollView.contentOffset.y
@@ -151,22 +122,12 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension MainViewController : TopDefaultViewDelegate {
-    func tapButtonpressed() {
-        print("클린된다")
-    }
-}
-
+// SearchController extension
 extension MainViewController : UISearchBarDelegate, UISearchResultsUpdating {
     
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         filterContentForSearchText(searchBar.text!)
       }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("검색중")
-    }
-
     
     private func searchBarIsEmpty() -> Bool {
         return searchController.searchBar.text?.isEmpty ?? true
@@ -194,5 +155,57 @@ extension MainViewController : UISearchBarDelegate, UISearchResultsUpdating {
         filterContentForSearchText(searchController.searchBar.text!)
         print("\(searchController.searchBar.text!)")
     }
+    
+
 }
+
+
+// AlerController extension
+extension MainViewController  {
+    @objc func sortButtonTaped(_ sender: UIButton) {
+        alertSheet(style: .actionSheet)
+        print("버튼이 눌리나😄😄😄😄")
+    }
+    
+    private func alertSheet(style : UIAlertController.Style) {
+        //alertTitle
+        let alertTitle = UIAlertController(title: nil,
+                                           message: "정렬방식을 선택해주세요.",
+                                           preferredStyle: .actionSheet)
+        //alertoptions
+        let nameSorted = UIAlertAction(title: "이름순",
+                                       style: .default) { (UIAlertAction) in
+            self.sortedByName()
+        }
+        
+        let dateSorted = UIAlertAction(title: "날짜순",
+                                       style: .default) { (UIAlertAction) in
+            self.sorterByRedate()
+        }
+        
+        //cancle
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .cancel,
+                                         handler: nil)
+        
+        //alertsheet 에 action 추가
+        alertTitle.addAction(nameSorted)
+        alertTitle.addAction(dateSorted)
+        alertTitle.addAction(cancelAction)
+        
+        // alertsheet show
+        self.present(alertTitle, animated: true, completion: nil)
+    }
+    
+    // 이름순 정렬
+    private func sortedByName() {
+        print("이름순!!😁")
+    }
+    
+    // Redate 순 정렬
+    private func sorterByRedate() {
+        
+    }
+}
+
 

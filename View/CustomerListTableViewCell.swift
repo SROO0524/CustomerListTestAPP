@@ -19,14 +19,15 @@ class CustomerListTableViewCell: UITableViewCell {
             
             self.setImage(frome: self.customerInfo?.profileUrl ?? "")
             self.nameLabel.text = self.customerInfo?.name
-            self.phoneLabel.text = (self.customerInfo != nil) ?  updatePhoneNumber(self.customerInfo!.contact) : ""
+            self.contactLabel.text = (self.customerInfo != nil) ?  updatePhoneNumber(self.customerInfo!.contact) : ""
             //            self.redateLabel.text = self.customerInfo?.regdate
             self.redateLabel.text = updateRedate(customerInfo?.regdate ?? "")
-            self.memoView.text = self.customerInfo?.memo
+            self.memoLabel.text = self.customerInfo?.memo
         }
     }
     
-    private let profileImage : UIImageView = {
+    // 프로필 이미지
+    private let profileUrl : UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "noimg")
         image.frame.size = CGSize(width: 60, height: 60)
@@ -36,27 +37,30 @@ class CustomerListTableViewCell: UITableViewCell {
         return image
     }()
     
+    //고객명라벨
     private let nameLabel : UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 19)
         return label
     }()
     
-    private let phoneLabel : UILabel = {
+    //연락처라벨
+    private let contactLabel : UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 16)
         label.textColor = ColorModel.customSubGray
         return label
     }()
     
+    //redate 라벨
     private let redateLabel : UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 16)
         label.textColor = ColorModel.customSubGray
         return label
     }()
-    
-    private let memoView : UILabel = {
+    // 메모라벨
+    private let memoLabel : UILabel = {
         let label = UILabel()
         label.textAlignment = .left
         label.clipsToBounds = true
@@ -88,34 +92,34 @@ class CustomerListTableViewCell: UITableViewCell {
     
     private func configureSetUI() {
         
-        [profileImage,nameLabel,phoneLabel,redateLabel,memoView].forEach({
+        [profileUrl,nameLabel,contactLabel,redateLabel,memoLabel].forEach({
             contentView.addSubview($0)
         })
         
-        profileImage.snp.makeConstraints { (make) in
+        profileUrl.snp.makeConstraints { (make) in
             make.top.leading.equalToSuperview().offset(15)
             make.bottom.equalTo(contentView).inset(55)
             make.width.equalTo(contentView.snp.width).multipliedBy(0.18)
-            make.height.equalTo(profileImage.snp.width)
+            make.height.equalTo(profileUrl.snp.width)
         }
         
         nameLabel.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(26)
-            make.leading.equalTo(profileImage.snp.trailing).offset(15)
+            make.leading.equalTo(profileUrl.snp.trailing).offset(15)
         }
         
-        phoneLabel.snp.makeConstraints { (make) in
+        contactLabel.snp.makeConstraints { (make) in
             make.top.equalTo(nameLabel.snp.bottom).offset(4)
             make.leading.equalTo(nameLabel)
         }
         
         redateLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(phoneLabel)
+            make.top.equalTo(contactLabel)
             make.trailing.equalTo(contentView).inset(15)
         }
         
-        memoView.snp.makeConstraints { (make) in
-            make.leading.equalTo(profileImage)
+        memoLabel.snp.makeConstraints { (make) in
+            make.leading.equalTo(profileUrl)
             make.trailing.equalTo(contentView).inset(15)
             make.bottom.equalTo(contentView).inset(15)
         }
@@ -124,10 +128,10 @@ class CustomerListTableViewCell: UITableViewCell {
     // Kingfisher Image Set Func
     private func setImage(frome url: String) {
         guard let imageURL = URL(string: url) else { return }
-        self.profileImage.kf.setImage(with: imageURL)
+        self.profileUrl.kf.setImage(with: imageURL)
     }
     
-    //phoneNumber Fomatter
+    //phoneNumber Fomatter Func
     private func updatePhoneNumber(_ number: String) -> String {
         var head: String.Index = number.startIndex
         var middle: String.Index = number.startIndex
@@ -148,7 +152,7 @@ class CustomerListTableViewCell: UITableViewCell {
         return "\(number[number.startIndex..<head])-\(number[head..<middle])-\(number[middle..<number.endIndex])"
         
     }
-    
+    // Redate Date Formatter Func
     private func updateRedate(_ stringDate: String) -> String {
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyyMMddHHmmss"
