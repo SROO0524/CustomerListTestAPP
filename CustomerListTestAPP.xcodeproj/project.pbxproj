@@ -11,8 +11,9 @@
 		DE13095C25650204005A49A2 /* ConstansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13095B25650204005A49A2 /* ConstansModel.swift */; };
 		DE13096325651601005A49A2 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13096225651601005A49A2 /* ColorModel.swift */; };
 		DE13097125665A83005A49A2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13097025665A83005A49A2 /* Extension.swift */; };
+		DE5057452567E8E6004AEA6E /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5057442567E8E6004AEA6E /* RequestService.swift */; };
 		DE601E9E2562B2C1008D9FAE /* DataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601E9D2562B2C1008D9FAE /* DataFetch.swift */; };
-		DE601EA42562BA58008D9FAE /* CustomerListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601EA32562BA58008D9FAE /* CustomerListTableViewModel.swift */; };
+		DE601EA42562BA58008D9FAE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601EA32562BA58008D9FAE /* MainViewModel.swift */; };
 		DE601EA82562BAA0008D9FAE /* CustomerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */; };
 		DED956EA2562471300CDCE23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED956E92562471300CDCE23 /* AppDelegate.swift */; };
 		DED956EC2562471300CDCE23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED956EB2562471300CDCE23 /* SceneDelegate.swift */; };
@@ -29,8 +30,9 @@
 		DE13095B25650204005A49A2 /* ConstansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstansModel.swift; sourceTree = "<group>"; };
 		DE13096225651601005A49A2 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		DE13097025665A83005A49A2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DE5057442567E8E6004AEA6E /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		DE601E9D2562B2C1008D9FAE /* DataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetch.swift; sourceTree = "<group>"; };
-		DE601EA32562BA58008D9FAE /* CustomerListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewModel.swift; sourceTree = "<group>"; };
+		DE601EA32562BA58008D9FAE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DE601EA72562BAA0008D9FAE /* CustomerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewCell.swift; sourceTree = "<group>"; };
 		DED956E62562471300CDCE23 /* CustomerListTestAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerListTestAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED956E92562471300CDCE23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				DE601E9D2562B2C1008D9FAE /* DataFetch.swift */,
+				DE5057442567E8E6004AEA6E /* RequestService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -147,7 +150,7 @@
 		DED9570225624A6900CDCE23 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DE601EA32562BA58008D9FAE /* CustomerListTableViewModel.swift */,
+				DE601EA32562BA58008D9FAE /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -279,9 +282,10 @@
 				DED956EA2562471300CDCE23 /* AppDelegate.swift in Sources */,
 				DE13097125665A83005A49A2 /* Extension.swift in Sources */,
 				DE601EA82562BAA0008D9FAE /* CustomerListTableViewCell.swift in Sources */,
-				DE601EA42562BA58008D9FAE /* CustomerListTableViewModel.swift in Sources */,
+				DE601EA42562BA58008D9FAE /* MainViewModel.swift in Sources */,
 				DE601E9E2562B2C1008D9FAE /* DataFetch.swift in Sources */,
 				DE13095C25650204005A49A2 /* ConstansModel.swift in Sources */,
+				DE5057452567E8E6004AEA6E /* RequestService.swift in Sources */,
 				DED956EC2562471300CDCE23 /* SceneDelegate.swift in Sources */,
 				DE13096325651601005A49A2 /* ColorModel.swift in Sources */,
 			);

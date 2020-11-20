@@ -88,6 +88,17 @@ class CustomerListTableViewCell: UITableViewCell {
         self.customerInfo = customerInfo
     }
     
+    func style() {
+        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderWidth = 0.2
+        self.contentView.layer.cornerRadius = 20
+        self.contentView.layer.borderWidth = 10
+        self.contentView.layer.borderColor = ColorModel.customBackgroundColor.cgColor
+        self.contentView.layer.masksToBounds = false
+        self.layer.masksToBounds = false
+        self.layer.shadowPath = UIBezierPath(roundedRect:self.bounds, cornerRadius:self.contentView.layer.cornerRadius).cgPath
+    }
+    
     //    MARK: configure
     
     private func configureSetUI() {

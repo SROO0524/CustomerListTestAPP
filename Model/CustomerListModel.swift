@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct CutomerListResponse: Codable {
+public protocol Response {}
+
+struct CutomerListResponse: Codable, Response {
     let list: [CustomerInfo]
 }
 
