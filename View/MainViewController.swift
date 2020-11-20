@@ -13,12 +13,17 @@ class MainViewController: UIViewController {
     let url = "http://crm-staging.gongbiz.kr/app/v2020/cust"
     var loading = false
     var isEnded = false
-    var customerInfos : [CustomerInfo] = [] {
+    var isFilteringOrOrdering = false
+    var customerInfos: [CustomerInfo] = [] {
         didSet{
-            tableView.reloadData()
-            loading = false
+            self.customerInfosForTable = self.customerInfos
+            self.tableView.reloadData()
+            self.loading = false
         }
     }
+    
+    var customerInfosForTable: [CustomerInfo] = []
+    
     var page = 1
 
 //    private let dataFetch = DataFetch()
@@ -29,8 +34,7 @@ class MainViewController: UIViewController {
         return table
     }()
     
-    
-    
+
     private let searchController : UISearchController = {
         let search = UISearchController(searchResultsController: nil)
         search.searchBar.clipsToBounds = true
@@ -42,6 +46,12 @@ class MainViewController: UIViewController {
        let button = UIButton()
         button.setImage(UIImage(named: "btnLineUp"), for: .normal)
         return button
+    }()
+    
+    private let image : UIImageView = {
+        let imageview = UIImageView()
+        imageview.image = UIImage(named: "btnLineUp")
+        return imageview
     }()
     
 
@@ -83,7 +93,7 @@ class MainViewController: UIViewController {
     private func configure() {
 
     }
-    
+        
     // Navigation Bar 설정
     private func congigureNavigation() {
         //Title
@@ -92,24 +102,14 @@ class MainViewController: UIViewController {
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         
         //Button
-        guard let navigationBar = self.navigationController?.navigationBar else { return }
-        navigationBar.addSubview(button)
-        button.snp.makeConstraints { (make) in
-            make.trailing.equalTo(navigationBar.snp.trailing).offset(-Const.ImageRightMargin)
-            make.centerY.equalTo(navigationBar.snp.centerY).offset(-Const.ImageBottomMarginForLargeState)
+       navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
 
-        }
-        
         // Search Controller
-//        navigationItem.hidesSearchBarWhenScrolling = true
+        navigationItem.hidesSearchBarWhenScrolling = true
         navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = true
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(string: "검색어를 입력해주세요")
-
-    }
-    
-    private func congifureLayout() {
-        
-
     }
     
     private func configureStoreInfo(_ page: Int) {
@@ -119,19 +119,21 @@ class MainViewController: UIViewController {
 
 }
 
+//    MARK: Extension
+
 extension MainViewController : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.customerInfos.count
+        return customerInfosForTable.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomerListTableViewCell.identifier, for: indexPath) as!
                 CustomerListTableViewCell
-        cell.update(self.customerInfos[indexPath.row])
+        cell.update(self.customerInfosForTable[indexPath.row])
         cell.separatorInset = UIEdgeInsets.zero
         return cell
     }
@@ -142,7 +144,7 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         let scrollViewHeight: CGFloat = scrollView.contentSize.height
         let distanceFromBottom: CGFloat = scrollViewHeight - contentYOffset
                   
-        if distanceFromBottom < height && !loading && !isEnded {
+        if distanceFromBottom < height && !loading && !isEnded && !isFiltering() {
             page += 1
             configureStoreInfo(page)
         }
@@ -155,4 +157,42 @@ extension MainViewController : TopDefaultViewDelegate {
     }
 }
 
+extension MainViewController : UISearchBarDelegate, UISearchResultsUpdating {
+    
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterContentForSearchText(searchBar.text!)
+      }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("검색중")
+    }
+
+    
+    private func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    // 필터링된 컨텐츠를 보여 줄때.
+    private func filterContentForSearchText(_ searchText: String) {
+        customerInfosForTable = customerInfos.filter({ (customerinfo : CustomerInfo) -> Bool in
+            if (searchText.isEmpty) {
+                return true
+            }
+            return customerinfo.name.lowercased().contains(searchText.lowercased())
+            || customerinfo.contact.lowercased().contains(searchText.lowercased())
+        })
+        tableView.reloadData()
+    }
+    
+    // 필터링 결과 사용할지 아닐지 결정하기 위한 메소드
+    private func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+        
+    }
+    
+    // 검색창 검색결과 업데이트
+    internal func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+        print("\(searchController.searchBar.text!)")
+    }
+}
 
