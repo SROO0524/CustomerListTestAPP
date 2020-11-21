@@ -90,6 +90,7 @@ class CustomerListTableViewCell: UITableViewCell {
     func update(_ customerInfo: CustomerInfo) {
         self.customerInfo = customerInfo
         setData()
+        
     }
     
     // Cell Style

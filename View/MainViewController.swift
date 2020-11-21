@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainViewController: UIViewController, ViewModelDelegate {
     
@@ -85,7 +86,6 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomerListTableViewCell.identifier, for: indexPath) as!
                 CustomerListTableViewCell
         cell.update(viewModel.find(index: indexPath.row))
-        
         cell.style()
         return cell
     }
@@ -100,6 +100,12 @@ extension MainViewController : UITableViewDelegate, UITableViewDataSource {
         if distanceFromBottom < height && !isFiltering() {
             viewModel.fetch()
         }
+    }
+    
+    // Table View Cell 의 이미지 캐싱 문제
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomerListTableViewCell.identifier)
+        cell?.imageView?.kf.cancelDownloadTask()
     }
 }
 
