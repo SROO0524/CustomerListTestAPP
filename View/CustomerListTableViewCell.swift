@@ -15,17 +15,19 @@ class CustomerListTableViewCell: UITableViewCell {
     //    MARK: Properties
     
     //Cell Data Set
-    var customerInfo : CustomerInfo? {
-        didSet{
-            
-            self.setImage(frome: self.customerInfo?.profileUrl ?? "")
-            self.nameLabel.text = self.customerInfo?.name
-            self.contactLabel.text = (self.customerInfo != nil) ?  updatePhoneNumber(self.customerInfo!.contact) : ""
-            //            self.redateLabel.text = self.customerInfo?.regdate
-            self.redateLabel.text = updateRedate(customerInfo?.regdate ?? "")
-            self.memoLabel.text = self.customerInfo?.memo
-        }
-    }
+//    var customerInfo : CustomerInfo? {
+//        didSet{
+//
+//            setImage(frome: self.customerInfo?.profileUrl ?? "")
+//            self.nameLabel.text = self.customerInfo?.name
+//            self.contactLabel.text = (self.customerInfo != nil) ?  updatePhoneNumber(self.customerInfo!.contact) : ""
+//            //            self.redateLabel.text = self.customerInfo?.regdate
+//            self.redateLabel.text = updateRedate(customerInfo?.regdate ?? "")
+//            self.memoLabel.text = self.customerInfo?.memo
+//        }
+//    }
+    
+    var customerInfo : CustomerInfo?
     
     // 프로필 이미지
     private let profileUrl : UIImageView = {
@@ -87,8 +89,10 @@ class CustomerListTableViewCell: UITableViewCell {
     // Cell Data Set Func
     func update(_ customerInfo: CustomerInfo) {
         self.customerInfo = customerInfo
+        setData()
     }
     
+    // Cell Style
     func style() {
         self.layer.borderColor = UIColor.white.cgColor
         self.layer.borderWidth = 0.2
@@ -103,6 +107,8 @@ class CustomerListTableViewCell: UITableViewCell {
     //    MARK: configure
     
     private func configureSetUI() {
+        
+        
         
         [profileUrl,nameLabel,contactLabel,redateLabel,memoLabel].forEach({
             contentView.addSubview($0)
@@ -135,7 +141,22 @@ class CustomerListTableViewCell: UITableViewCell {
             make.trailing.equalTo(contentView).inset(15)
             make.bottom.equalTo(contentView).inset(15)
         }
+        
+        
     }
+    
+//    MARK: Func
+    
+    // Data Set
+    private func setData() {
+        self.setImage(frome: self.customerInfo?.profileUrl ?? "")
+        self.nameLabel.text = self.customerInfo?.name
+        self.contactLabel.text = (self.customerInfo != nil) ?  updatePhoneNumber(self.customerInfo!.contact) : ""
+        self.redateLabel.text = updateRedate(customerInfo?.regdate ?? "")
+        self.memoLabel.text = self.customerInfo?.memo
+        
+    }
+    
     
     // Kingfisher Image Set Func
     private func setImage(frome url: String) {
