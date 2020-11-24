@@ -33,7 +33,7 @@ class RequestService {
             guard let code = response.response?.statusCode else { self.requestDelegate?.fail()
                 return
             }
-            
+            // 오류 체크
             if code >= 200, code <= 299 {
                 switch response.result {
                     case .success(let data):

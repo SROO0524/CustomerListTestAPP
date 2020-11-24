@@ -7,10 +7,10 @@
 
 import Foundation
 
-public protocol Response {}
+public protocol Response: Codable {}
 
 //    MARK: Data Model
-struct CutomerListResponse: Codable, Response {
+struct CutomerListResponse: Response {
     let list: [CustomerInfo]
 }
 
@@ -37,4 +37,8 @@ struct CustomerInfo : Codable {
 struct UrlBase {
     static let baseUrl = "http://crm-staging.gongbiz.kr/app/v2020/cust"
 
+}
+
+struct CustomDetailResponse: Response {
+    let item: CustomerInfo
 }

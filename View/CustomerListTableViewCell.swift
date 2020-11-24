@@ -13,20 +13,7 @@ class CustomerListTableViewCell: UITableViewCell {
     static let identifier = "CustomerListTableViewCell"
     
     //    MARK: Properties
-    
-    //Cell Data Set
-//    var customerInfo : CustomerInfo? {
-//        didSet{
-//
-//            setImage(frome: self.customerInfo?.profileUrl ?? "")
-//            self.nameLabel.text = self.customerInfo?.name
-//            self.contactLabel.text = (self.customerInfo != nil) ?  updatePhoneNumber(self.customerInfo!.contact) : ""
-//            //            self.redateLabel.text = self.customerInfo?.regdate
-//            self.redateLabel.text = updateRedate(customerInfo?.regdate ?? "")
-//            self.memoLabel.text = self.customerInfo?.memo
-//        }
-//    }
-    
+        
     var customerInfo : CustomerInfo?
     
     // 프로필 이미지
@@ -73,6 +60,8 @@ class CustomerListTableViewCell: UITableViewCell {
         label.textColor = ColorModel.customMemoGray
         return label
     }()
+    
+    private let containerView = UIView()
     
     //    MARK: Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

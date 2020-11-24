@@ -19,11 +19,10 @@ class MainViewController: UIViewController, ViewModelDelegate {
         return table
     }()
     
-
     private let searchController : UISearchController = {
         let search = UISearchController(searchResultsController: nil)
         search.searchBar.clipsToBounds = true
-        search.searchBar.layer.cornerRadius = 30
+        search.searchBar.layer.cornerRadius = 45
         return search
     }()
     
@@ -55,13 +54,13 @@ class MainViewController: UIViewController, ViewModelDelegate {
         //Navigation Bar Button
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: sortedButtonImage, style: .plain, target: self, action: #selector(sortButtonTaped(_:)))
 
-                                               
         // Search Controller in Navigation Controller
         navigationItem.hidesSearchBarWhenScrolling = true
         navigationItem.searchController = searchController
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = NSAttributedString(string: "검색어를 입력해주세요")
+
     }
     
     // TableView Reload
