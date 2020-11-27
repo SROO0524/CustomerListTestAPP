@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 해당 프로토콜을 가지면 꼭 Fetch 를 구현해야함!
 public protocol ViewModel: RequestDelegate {
     func fetch() -> Void
 }
@@ -77,6 +78,7 @@ class MainViewModel: ViewModel, RequestDelegate {
         self.viewModeldelegate?.reload()
     }
     
+    // 기존 정렬순
     public func sorterByOriginal() {
         self.customerInfos = self.originalCustomerInfos
         self.viewModeldelegate?.reload()

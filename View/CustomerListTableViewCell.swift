@@ -31,6 +31,7 @@ class CustomerListTableViewCell: UITableViewCell {
     private let nameLabel : UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 19)
+        label.numberOfLines = 0
         return label
     }()
     
@@ -58,6 +59,7 @@ class CustomerListTableViewCell: UITableViewCell {
         label.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 15)
         label.backgroundColor = ColorModel.customMemoBackgroungGray
         label.textColor = ColorModel.customMemoGray
+        label.numberOfLines = 0
         return label
     }()
     
@@ -105,8 +107,7 @@ class CustomerListTableViewCell: UITableViewCell {
         })
         
         profileUrl.snp.makeConstraints { (make) in
-            make.top.leading.equalToSuperview().offset(15)
-            make.bottom.equalTo(contentView).inset(35)
+            make.top.leading.equalTo(contentView).offset(15)
             make.width.equalTo(contentView.snp.width).multipliedBy(0.18)
             make.height.equalTo(profileUrl.snp.width)
         }
@@ -127,6 +128,7 @@ class CustomerListTableViewCell: UITableViewCell {
         }
         
         memoLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(profileUrl.snp.bottom).offset(15)
             make.leading.equalTo(profileUrl)
             make.trailing.equalTo(contentView).inset(15)
             make.bottom.equalTo(contentView).inset(15)
